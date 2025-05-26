@@ -4,7 +4,7 @@ import { ListSection } from "./listsection";
 
 const StyledSection = styled.section`
   background-color: #f5f9fc;
-  width: 80%;
+  width: 100%;
   height: 80%;
   border-radius: 10px;
   display: flex;

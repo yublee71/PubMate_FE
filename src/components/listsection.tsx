@@ -11,8 +11,16 @@ const StyledDiv = styled.div`
 export function ListSection() {
   return (
     <StyledDiv>
-      <List name="A"></List>
-      <List name="B"></List>
+      <List
+        pubIndex="A"
+        pubName="pub A"
+        pubInfo="£4 for a pint of Guiness"
+      ></List>
+      <List
+        pubIndex="B"
+        pubName="pub B"
+        pubInfo="£5.5 for a pint of Neckoil"
+      ></List>
     </StyledDiv>
   );
 }
