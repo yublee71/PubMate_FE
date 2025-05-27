@@ -16,10 +16,6 @@ const StyledForm = styled.form`
 const StyledInput = styled.input`
   border: none;
   outline: none;
-  :focus {
-    border: none;
-    outline: none;
-  }
 `;
 
 const StyledButton = styled.button`
