@@ -24,7 +24,7 @@ const MapIndex = styled.div`
 `;
 
 export function List(props: {
-  pubIndex: string;
+  pubIndex: number;
   pubName: string;
   pubInfo: string;
 }) {

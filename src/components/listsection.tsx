@@ -8,19 +8,15 @@ const StyledDiv = styled.div`
   flex-direction: column;
   gap: 10px;
 `;
-export function ListSection() {
+
+import type { Pubs } from "./section";
+
+export function ListSection({ pubs }: Pubs) {
   return (
     <StyledDiv>
-      <List
-        pubIndex="A"
-        pubName="pub A"
-        pubInfo="£4 for a pint of Guiness"
-      ></List>
-      <List
-        pubIndex="B"
-        pubName="pub B"
-        pubInfo="£5.5 for a pint of Neckoil"
-      ></List>
+      {pubs.map((pub, i) => (
+        <List pubIndex={i + 1} pubName={pub.pub_name} pubInfo="dummy text" />
+      ))}
     </StyledDiv>
   );
 }
